@@ -9,7 +9,7 @@
         value: true
     });
     exports.default = _emberData.default.JSONAPIAdapter.extend({
-        host: 'https://agile-shore-96727.herokuapp.com/api/v1/requests'
+        host: 'https://agile-shore-96727.herokuapp.com/api/v1'
         //namespace:'api',
     });
 });
@@ -468,7 +468,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("front-end-kitady/app")["default"].create({"name":"front-end-kitady","version":"0.0.0+d924c4e8"});
+            require("front-end-kitady/app")["default"].create({"name":"front-end-kitady","version":"0.0.0+6a2cfd3e"});
           }
         
 //# sourceMappingURL=front-end-kitady.map
