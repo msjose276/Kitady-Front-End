@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  
+
   actions: {
     requestCard: function() {
 
@@ -17,22 +17,20 @@ export default Route.extend({
       var budget = document.getElementById('budget').value;
 
       let newRecord = this.store.createRecord('request', {
-        "fullName": fullName,
+        "fullname": fullName,
         "email":email,
-        "phoneNumber": phone,
-        "bordereauNumber": bolderoNumber,
-        "cardType": typeOfCard,
-        "cardValue": Number(budget),
-        "bankName": typeOfBank,
-        "amountDeposited": amoundDeposited,
+        "phonenumber": phone,
+        "bordereaunumber": bolderoNumber,
+        "cardtype": typeOfCard,
+        "cardvalue": Number(budget),
+        "bankname": typeOfBank,
+        "amountdeposited": amoundDeposited,
         "message":message
       })
         .save()
         .then(alert('Pedido Enviado'))
         .catch(function(reason){alert(reason.message)}
           );
-
-      //alert("requestCard ");
     }
   }
 
